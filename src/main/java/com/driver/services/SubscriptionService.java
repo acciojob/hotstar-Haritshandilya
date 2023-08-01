@@ -78,6 +78,7 @@ public class SubscriptionService {
         //Hint is to use findAll function from the SubscriptionDb
         Integer totalRevenue = 0;
         List<Subscription> sbs = subscriptionRepository.findAll();
+        if(sbs==null) return totalRevenue;
         for(Subscription sb: sbs)
             totalRevenue+=sb.getTotalAmountPaid();
         return totalRevenue;
