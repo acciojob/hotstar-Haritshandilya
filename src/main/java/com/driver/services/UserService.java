@@ -35,7 +35,7 @@ public class UserService {
         User savedUser = userRepository.save(user);
         System.out.println(savedUser);
 //        System.out.println(newUser.getId()+" "+user.getId());
-        return savedUser.getId()-1;
+        return savedUser.getId();
     }
 
     public Integer getAvailableCountOfWebSeriesViewable(Integer userId){
