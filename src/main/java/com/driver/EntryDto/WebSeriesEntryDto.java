@@ -12,9 +12,9 @@ public class WebSeriesEntryDto {
 
     private String seriesName;
 
-    private int ageLimit;
+    private Integer ageLimit;
 
-    private double rating;
+    private Double rating;
 
     private SubscriptionType subscriptionType; //This denotes with which of subscriptionType this webseries comes ie. BASIC,PRO, ELITE
 
