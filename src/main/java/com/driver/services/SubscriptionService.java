@@ -50,7 +50,7 @@ public class SubscriptionService {
         //In all other cases just try to upgrade the subscription and tell the difference of price that user has to pay
         //update the subscription in the repository
         Optional<User> optionalUser = userRepository.findById(userId);
-        if(!optionalUser.isPresent()) return null;
+        if(!optionalUser.isPresent()) return 0;
         User user = optionalUser.get();
         Subscription subscription = user.getSubscription();
         SubscriptionType subscriptionType = subscription.getSubscriptionType();
